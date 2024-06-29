@@ -1,6 +1,7 @@
 <header class="header">
   <section class="header-container">
     <a class="logo" href="<%- url_for() %>"><%= config.title %></a>
+    <a id="searchWidgetTrigger">search</a>
     <ul class="nav">
       <% for (name in theme.menu) { %>
       <li><a href="<%- url_for(theme.menu[name]) %>"><%= name %></a></li>
